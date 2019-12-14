@@ -9,13 +9,13 @@ modules:
     enabled:
         - \Helper\Functional
         - PhpBrowser:
-            url: 'http://www.ninja.test:8000'
+            url: 'web'
             curl:
                CURLOPT_RETURNTRANSFER: true
         - Db:
             dsn: 'mysql:dbname=ninja;host=127.0.0.1;'
-            user: 'ninja'
-            password: 'ninja'
+            user: 'phpmyadmin'
+            password: 'root'
             dump: tests/_data/dump.sql
     disabled:
         - Laravel5

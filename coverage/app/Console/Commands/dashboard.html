@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/marek/Plocha/skola/ESS/invoiceninja/app/Console/Commands</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../../js/html5shiv.min.js"></script>
+  <script src="../../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../../index.html">/home/marek/Plocha/skola/ESS/invoiceninja</a></li>
+        <li><a href="../../index.html">app</a></li>
+        <li><a href="../index.html">Console</a></li>
+        <li><a href="index.html">Commands</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CalculatePayouts.php.html#11">CalculatePayouts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PruneData.php.html#12">PruneData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TestOFX.php.html#11">TestOFX</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#15">SendRenewalInvoices</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#29">SendReminders</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#21">SendRecurringInvoices</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#14">SendOverdueTickets</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ResetData.php.html#12">ResetData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#13">RemoveOrphanedDocuments</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#11">MobileLocalization</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#17">ChargeRenewalInvoices</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#12">MakeModuleSettings</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#9">MakeModule</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#14">MakeClass</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#17">InitLookup</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#31">CreateTestData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#14">CreateLuisData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#55">CheckData</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UpdateKey.php.html#18">UpdateKey</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CheckData.php.html#55">CheckData</a></td><td class="text-right">9506</td></tr>
+       <tr><td><a href="InitLookup.php.html#17">InitLookup</a></td><td class="text-right">7140</td></tr>
+       <tr><td><a href="SendReminders.php.html#29">SendReminders</a></td><td class="text-right">1722</td></tr>
+       <tr><td><a href="CreateTestData.php.html#31">CreateTestData</a></td><td class="text-right">756</td></tr>
+       <tr><td><a href="UpdateKey.php.html#18">UpdateKey</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#14">CreateLuisData</a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="MakeClass.php.html#14">MakeClass</a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#21">SendRecurringInvoices</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#15">SendRenewalInvoices</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#11">CalculatePayouts</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#17">ChargeRenewalInvoices</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#11">MobileLocalization</a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="MakeModule.php.html#9">MakeModule</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#12">MakeModuleSettings</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#14">SendOverdueTickets</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="PruneData.php.html#12">PruneData</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#13">RemoveOrphanedDocuments</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="ResetData.php.html#12">ResetData</a></td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CalculatePayouts.php.html#33"><abbr title="CalculatePayouts::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#77"><abbr title="MakeModuleSettings::getModuleRoutesFilePath">getModuleRoutesFilePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#24"><abbr title="RemoveOrphanedDocuments::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PruneData.php.html#78"><abbr title="PruneData::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PruneData.php.html#70"><abbr title="PruneData::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PruneData.php.html#24"><abbr title="PruneData::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#105"><abbr title="MobileLocalization::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#90"><abbr title="MobileLocalization::getResources">getResources</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#69"><abbr title="MobileLocalization::flutterResources">flutterResources</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#57"><abbr title="MobileLocalization::laravelResources">laravelResources</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#43"><abbr title="MobileLocalization::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#33"><abbr title="MobileLocalization::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#109"><abbr title="MakeModuleSettings::getFileName">getFileName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#99"><abbr title="MakeModuleSettings::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#92"><abbr title="MakeModuleSettings::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#84"><abbr title="MakeModuleSettings::getDestinationFilePath">getDestinationFilePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#55"><abbr title="MakeModuleSettings::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#55"><abbr title="RemoveOrphanedDocuments::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#140"><abbr title="MakeClass::getDatabaseFields">getDatabaseFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#49"><abbr title="MakeClass::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#57"><abbr title="MakeClass::getTemplateContents">getTemplateContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#74"><abbr title="MakeClass::getDestinationFilePath">getDestinationFilePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#85"><abbr title="MakeClass::getFileName">getFileName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#94"><abbr title="MakeClass::getColumns">getColumns</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#116"><abbr title="MakeClass::getFormFields">getFormFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#157"><abbr title="MakeClass::getTransformerFields">getTransformerFields</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#43"><abbr title="MakeModuleSettings::getTemplateContents">getTemplateContents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#30"><abbr title="MakeModule::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#40"><abbr title="MakeModule::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#50"><abbr title="MakeModule::anonymousFunction:50#182">anonymousFunction:50#182</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#136"><abbr title="MakeModule::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModule.php.html#144"><abbr title="MakeModule::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#38"><abbr title="MakeModuleSettings::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#47"><abbr title="RemoveOrphanedDocuments::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ResetData.php.html#24"><abbr title="ResetData::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#369"><abbr title="InitLookup::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#51"><abbr title="SendRenewalInvoices::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#158"><abbr title="SendReminders::sendReminderEmails">sendReminderEmails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#208"><abbr title="SendReminders::sendScheduledReports">sendScheduledReports</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#252"><abbr title="SendReminders::loadExchangeRates">loadExchangeRates</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#295"><abbr title="SendReminders::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#303"><abbr title="SendReminders::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#43"><abbr title="SendRenewalInvoices::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#103"><abbr title="SendRenewalInvoices::anonymousFunction:103#637">anonymousFunction:103#637</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#98"><abbr title="SendReminders::billInvoices">billInvoices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#114"><abbr title="SendRenewalInvoices::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#122"><abbr title="SendRenewalInvoices::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TestOFX.php.html#33"><abbr title="TestOFX::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="TestOFX.php.html#40"><abbr title="TestOFX::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UpdateKey.php.html#30"><abbr title="UpdateKey::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UpdateKey.php.html#132"><abbr title="UpdateKey::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#125"><abbr title="SendReminders::chargeLateFees">chargeLateFees</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#90"><abbr title="SendReminders::anonymousFunction:90#432">anonymousFunction:90#432</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ResetData.php.html#44"><abbr title="ResetData::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#43"><abbr title="SendRecurringInvoices::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#26"><abbr title="SendOverdueTickets::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#33"><abbr title="SendOverdueTickets::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#45"><abbr title="SendOverdueTickets::sendReminders">sendReminders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#52"><abbr title="SendOverdueTickets::anonymousFunction:52#258">anonymousFunction:52#258</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#65"><abbr title="SendOverdueTickets::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#73"><abbr title="SendOverdueTickets::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#51"><abbr title="SendRecurringInvoices::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#73"><abbr title="SendReminders::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#66"><abbr title="SendRecurringInvoices::resetCounters">resetCounters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#77"><abbr title="SendRecurringInvoices::createInvoices">createInvoices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#117"><abbr title="SendRecurringInvoices::createExpenses">createExpenses</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#142"><abbr title="SendRecurringInvoices::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#150"><abbr title="SendRecurringInvoices::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SendReminders.php.html#63"><abbr title="SendReminders::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MakeClass.php.html#34"><abbr title="MakeClass::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#355"><abbr title="InitLookup::truncateTables">truncateTables</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#43"><abbr title="CalculatePayouts::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#483"><abbr title="CheckData::checkAccountData">checkAccountData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#367"><abbr title="CheckData::anonymousFunction:367#2304">anonymousFunction:367#2304</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#401"><abbr title="CheckData::anonymousFunction:401#2615">anonymousFunction:401#2615</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#421"><abbr title="CheckData::checkFailedJobs">checkFailedJobs</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#437"><abbr title="CheckData::checkBlankInvoiceHistory">checkBlankInvoiceHistory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#452"><abbr title="CheckData::checkInvitations">checkInvitations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#455"><abbr title="CheckData::anonymousFunction:455#2993">anonymousFunction:455#2993</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#594"><abbr title="CheckData::checkPaidToDate">checkPaidToDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#285"><abbr title="CheckData::checkUserAccounts">checkUserAccounts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#598"><abbr title="CheckData::anonymousFunction:598#3879">anonymousFunction:598#3879</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#602"><abbr title="CheckData::anonymousFunction:602#3921">anonymousFunction:602#3921</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#629"><abbr title="CheckData::checkInvoiceBalances">checkInvoiceBalances</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#632"><abbr title="CheckData::anonymousFunction:632#4099">anonymousFunction:632#4099</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#650"><abbr title="CheckData::checkClientBalances">checkClientBalances</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#847"><abbr title="CheckData::checkLogoFiles">checkLogoFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#341"><abbr title="CheckData::checkContacts">checkContacts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#265"><abbr title="CheckData::checkLookupData">checkLookupData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#882"><abbr title="CheckData::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#118"><abbr title="ChargeRenewalInvoices::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#58"><abbr title="CalculatePayouts::referralPayouts">referralPayouts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#102"><abbr title="CalculatePayouts::resellerPayouts">resellerPayouts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#112"><abbr title="CalculatePayouts::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#51"><abbr title="ChargeRenewalInvoices::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#60"><abbr title="ChargeRenewalInvoices::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#107"><abbr title="ChargeRenewalInvoices::anonymousFunction:107#550">anonymousFunction:107#550</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#126"><abbr title="ChargeRenewalInvoices::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#221"><abbr title="CheckData::checkOAuth">checkOAuth</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#70"><abbr title="CheckData::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#104"><abbr title="CheckData::anonymousFunction:104#385">anonymousFunction:104#385</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#114"><abbr title="CheckData::logMessage">logMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#121"><abbr title="CheckData::checkTranslations">checkTranslations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#155"><abbr title="CheckData::checkDraftSentInvoices">checkDraftSentInvoices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#182"><abbr title="CheckData::checkInvoices">checkInvoices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CheckData.php.html#874"><abbr title="CheckData::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#30"><abbr title="CreateLuisData::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#349"><abbr title="InitLookup::logError">logError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#41"><abbr title="InitLookup::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#346"><abbr title="CreateTestData::createOtherObjects">createOtherObjects</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#358"><abbr title="CreateTestData::createTaxRate">createTaxRate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#369"><abbr title="CreateTestData::createCategory">createCategory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#379"><abbr title="CreateTestData::createProject">createProject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#393"><abbr title="CreateTestData::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#401"><abbr title="CreateTestData::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#51"><abbr title="InitLookup::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#303"><abbr title="CreateTestData::createVendors">createVendors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#82"><abbr title="InitLookup::anonymousFunction:82#458">anonymousFunction:82#458</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#93"><abbr title="InitLookup::popuplateSubdomains">popuplateSubdomains</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#117"><abbr title="InitLookup::initCompanies">initCompanies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#269"><abbr title="InitLookup::parseCompany">parseCompany</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#285"><abbr title="InitLookup::parseAccount">parseAccount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="InitLookup.php.html#342"><abbr title="InitLookup::logMessage">logMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#331"><abbr title="CreateTestData::createExpense">createExpense</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#278"><abbr title="CreateTestData::createTasks">createTasks</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#40"><abbr title="CreateLuisData::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#211"><abbr title="CreateLuisData::getArguments">getArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#67"><abbr title="CreateLuisData::createIntents">createIntents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#78"><abbr title="CreateLuisData::getCreateEntityIntents">getCreateEntityIntents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#104"><abbr title="CreateLuisData::getFindEntityIntents">getFindEntityIntents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#125"><abbr title="CreateLuisData::getListEntityIntents">getListEntityIntents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#167"><abbr title="CreateLuisData::getNavigateToIntents">getNavigateToIntents</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#185"><abbr title="CreateLuisData::createIntent">createIntent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#219"><abbr title="CreateLuisData::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#264"><abbr title="CreateTestData::createPayment">createPayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#61"><abbr title="CreateTestData::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#90"><abbr title="CreateTestData::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#126"><abbr title="CreateTestData::createClients">createClients</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#155"><abbr title="CreateTestData::createTicketTemplates">createTicketTemplates</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#186"><abbr title="CreateTestData::createTickets">createTickets</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateTestData.php.html#234"><abbr title="CreateTestData::createInvoices">createInvoices</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="UpdateKey.php.html#140"><abbr title="UpdateKey::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="InitLookup.php.html#117"><abbr title="InitLookup::initCompanies">initCompanies</abbr></a></td><td class="text-right">3080</td></tr>
+       <tr><td><a href="UpdateKey.php.html#30"><abbr title="UpdateKey::handle">handle</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="CheckData.php.html#341"><abbr title="CheckData::checkContacts">checkContacts</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="SendRenewalInvoices.php.html#51"><abbr title="SendRenewalInvoices::handle">handle</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="SendReminders.php.html#158"><abbr title="SendReminders::sendReminderEmails">sendReminderEmails</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="InitLookup.php.html#51"><abbr title="InitLookup::handle">handle</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="ChargeRenewalInvoices.php.html#60"><abbr title="ChargeRenewalInvoices::handle">handle</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="CheckData.php.html#285"><abbr title="CheckData::checkUserAccounts">checkUserAccounts</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="CheckData.php.html#182"><abbr title="CheckData::checkInvoices">checkInvoices</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#77"><abbr title="SendRecurringInvoices::createInvoices">createInvoices</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="CheckData.php.html#70"><abbr title="CheckData::handle">handle</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="CheckData.php.html#121"><abbr title="CheckData::checkTranslations">checkTranslations</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="SendReminders.php.html#252"><abbr title="SendReminders::loadExchangeRates">loadExchangeRates</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="InitLookup.php.html#285"><abbr title="InitLookup::parseAccount">parseAccount</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="MakeModule.php.html#40"><abbr title="MakeModule::handle">handle</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#58"><abbr title="CalculatePayouts::referralPayouts">referralPayouts</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="CheckData.php.html#483"><abbr title="CheckData::checkAccountData">checkAccountData</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="SendReminders.php.html#125"><abbr title="SendReminders::chargeLateFees">chargeLateFees</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="CheckData.php.html#221"><abbr title="CheckData::checkOAuth">checkOAuth</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="SendReminders.php.html#98"><abbr title="SendReminders::billInvoices">billInvoices</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="SendReminders.php.html#208"><abbr title="SendReminders::sendScheduledReports">sendScheduledReports</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="CheckData.php.html#155"><abbr title="CheckData::checkDraftSentInvoices">checkDraftSentInvoices</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="MakeClass.php.html#116"><abbr title="MakeClass::getFormFields">getFormFields</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="PruneData.php.html#24"><abbr title="PruneData::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#69"><abbr title="MobileLocalization::flutterResources">flutterResources</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#104"><abbr title="CreateLuisData::getFindEntityIntents">getFindEntityIntents</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CreateTestData.php.html#90"><abbr title="CreateTestData::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CheckData.php.html#847"><abbr title="CheckData::checkLogoFiles">checkLogoFiles</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CheckData.php.html#650"><abbr title="CheckData::checkClientBalances">checkClientBalances</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="CheckData.php.html#452"><abbr title="CheckData::checkInvitations">checkInvitations</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="RemoveOrphanedDocuments.php.html#24"><abbr title="RemoveOrphanedDocuments::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="ResetData.php.html#24"><abbr title="ResetData::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#117"><abbr title="SendRecurringInvoices::createExpenses">createExpenses</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#57"><abbr title="MobileLocalization::laravelResources">laravelResources</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="SendReminders.php.html#73"><abbr title="SendReminders::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MakeClass.php.html#157"><abbr title="MakeClass::getTransformerFields">getTransformerFields</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MakeClass.php.html#140"><abbr title="MakeClass::getDatabaseFields">getDatabaseFields</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MakeClass.php.html#94"><abbr title="MakeClass::getColumns">getColumns</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CalculatePayouts.php.html#43"><abbr title="CalculatePayouts::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="InitLookup.php.html#93"><abbr title="InitLookup::popuplateSubdomains">popuplateSubdomains</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CheckData.php.html#265"><abbr title="CheckData::checkLookupData">checkLookupData</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CheckData.php.html#421"><abbr title="CheckData::checkFailedJobs">checkFailedJobs</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#78"><abbr title="CreateLuisData::getCreateEntityIntents">getCreateEntityIntents</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CreateTestData.php.html#234"><abbr title="CreateTestData::createInvoices">createInvoices</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CreateTestData.php.html#186"><abbr title="CreateTestData::createTickets">createTickets</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#185"><abbr title="CreateLuisData::createIntent">createIntent</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="MakeClass.php.html#85"><abbr title="MakeClass::getFileName">getFileName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#66"><abbr title="SendRecurringInvoices::resetCounters">resetCounters</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CheckData.php.html#437"><abbr title="CheckData::checkBlankInvoiceHistory">checkBlankInvoiceHistory</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CheckData.php.html#594"><abbr title="CheckData::checkPaidToDate">checkPaidToDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CheckData.php.html#629"><abbr title="CheckData::checkInvoiceBalances">checkInvoiceBalances</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#40"><abbr title="CreateLuisData::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#125"><abbr title="CreateLuisData::getListEntityIntents">getListEntityIntents</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateLuisData.php.html#167"><abbr title="CreateLuisData::getNavigateToIntents">getNavigateToIntents</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#33"><abbr title="SendOverdueTickets::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SendRecurringInvoices.php.html#51"><abbr title="SendRecurringInvoices::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SendOverdueTickets.php.html#45"><abbr title="SendOverdueTickets::sendReminders">sendReminders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="InitLookup.php.html#269"><abbr title="InitLookup::parseCompany">parseCompany</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateTestData.php.html#126"><abbr title="CreateTestData::createClients">createClients</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateTestData.php.html#278"><abbr title="CreateTestData::createTasks">createTasks</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MobileLocalization.php.html#43"><abbr title="MobileLocalization::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#55"><abbr title="MakeModuleSettings::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="MakeModuleSettings.php.html#43"><abbr title="MakeModuleSettings::getTemplateContents">getTemplateContents</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateTestData.php.html#303"><abbr title="CreateTestData::createVendors">createVendors</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CreateTestData.php.html#331"><abbr title="CreateTestData::createExpense">createExpense</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="InitLookup.php.html#82"><abbr title="InitLookup::anonymousFunction:82#458">anonymousFunction:82#458</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="CheckData.php.html#104"><abbr title="CheckData::anonymousFunction:104#385">anonymousFunction:104#385</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 4.0.8</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.24-0ubuntu0.19.04.1</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 5.7.27</a> at Mon Dec 2 18:02:59 UTC 2019.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([19,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([142,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,13,"<a href=\"CalculatePayouts.php.html#11\">CalculatePayouts<\/a>"],[0,13,"<a href=\"ChargeRenewalInvoices.php.html#17\">ChargeRenewalInvoices<\/a>"],[0,97,"<a href=\"CheckData.php.html#55\">CheckData<\/a>"],[0,20,"<a href=\"CreateLuisData.php.html#14\">CreateLuisData<\/a>"],[0,27,"<a href=\"CreateTestData.php.html#31\">CreateTestData<\/a>"],[0,84,"<a href=\"InitLookup.php.html#17\">InitLookup<\/a>"],[0,19,"<a href=\"MakeClass.php.html#14\">MakeClass<\/a>"],[0,11,"<a href=\"MakeModule.php.html#9\">MakeModule<\/a>"],[0,10,"<a href=\"MakeModuleSettings.php.html#12\">MakeModuleSettings<\/a>"],[0,12,"<a href=\"MobileLocalization.php.html#11\">MobileLocalization<\/a>"],[0,6,"<a href=\"PruneData.php.html#12\">PruneData<\/a>"],[0,5,"<a href=\"RemoveOrphanedDocuments.php.html#13\">RemoveOrphanedDocuments<\/a>"],[0,4,"<a href=\"ResetData.php.html#12\">ResetData<\/a>"],[0,8,"<a href=\"SendOverdueTickets.php.html#14\">SendOverdueTickets<\/a>"],[0,18,"<a href=\"SendRecurringInvoices.php.html#21\">SendRecurringInvoices<\/a>"],[0,41,"<a href=\"SendReminders.php.html#29\">SendReminders<\/a>"],[0,14,"<a href=\"SendRenewalInvoices.php.html#15\">SendRenewalInvoices<\/a>"],[0,2,"<a href=\"TestOFX.php.html#11\">TestOFX<\/a>"],[0,23,"<a href=\"UpdateKey.php.html#18\">UpdateKey<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"CalculatePayouts.php.html#33\">CalculatePayouts::__construct<\/a>"],[0,3,"<a href=\"CalculatePayouts.php.html#43\">CalculatePayouts::handle<\/a>"],[0,7,"<a href=\"CalculatePayouts.php.html#58\">CalculatePayouts::referralPayouts<\/a>"],[0,1,"<a href=\"CalculatePayouts.php.html#102\">CalculatePayouts::resellerPayouts<\/a>"],[0,1,"<a href=\"CalculatePayouts.php.html#112\">CalculatePayouts::getOptions<\/a>"],[0,1,"<a href=\"ChargeRenewalInvoices.php.html#51\">ChargeRenewalInvoices::__construct<\/a>"],[0,9,"<a href=\"ChargeRenewalInvoices.php.html#60\">ChargeRenewalInvoices::handle<\/a>"],[0,1,"<a href=\"ChargeRenewalInvoices.php.html#107\">ChargeRenewalInvoices::anonymousFunction:107#550<\/a>"],[0,1,"<a href=\"ChargeRenewalInvoices.php.html#118\">ChargeRenewalInvoices::getArguments<\/a>"],[0,1,"<a href=\"ChargeRenewalInvoices.php.html#126\">ChargeRenewalInvoices::getOptions<\/a>"],[0,8,"<a href=\"CheckData.php.html#70\">CheckData::handle<\/a>"],[0,2,"<a href=\"CheckData.php.html#104\">CheckData::anonymousFunction:104#385<\/a>"],[0,1,"<a href=\"CheckData.php.html#114\">CheckData::logMessage<\/a>"],[0,8,"<a href=\"CheckData.php.html#121\">CheckData::checkTranslations<\/a>"],[0,5,"<a href=\"CheckData.php.html#155\">CheckData::checkDraftSentInvoices<\/a>"],[0,9,"<a href=\"CheckData.php.html#182\">CheckData::checkInvoices<\/a>"],[0,6,"<a href=\"CheckData.php.html#221\">CheckData::checkOAuth<\/a>"],[0,3,"<a href=\"CheckData.php.html#265\">CheckData::checkLookupData<\/a>"],[0,9,"<a href=\"CheckData.php.html#285\">CheckData::checkUserAccounts<\/a>"],[0,10,"<a href=\"CheckData.php.html#341\">CheckData::checkContacts<\/a>"],[0,1,"<a href=\"CheckData.php.html#367\">CheckData::anonymousFunction:367#2304<\/a>"],[0,1,"<a href=\"CheckData.php.html#401\">CheckData::anonymousFunction:401#2615<\/a>"],[0,3,"<a href=\"CheckData.php.html#421\">CheckData::checkFailedJobs<\/a>"],[0,2,"<a href=\"CheckData.php.html#437\">CheckData::checkBlankInvoiceHistory<\/a>"],[0,4,"<a href=\"CheckData.php.html#452\">CheckData::checkInvitations<\/a>"],[0,1,"<a href=\"CheckData.php.html#455\">CheckData::anonymousFunction:455#2993<\/a>"],[0,7,"<a href=\"CheckData.php.html#483\">CheckData::checkAccountData<\/a>"],[0,2,"<a href=\"CheckData.php.html#594\">CheckData::checkPaidToDate<\/a>"],[0,1,"<a href=\"CheckData.php.html#598\">CheckData::anonymousFunction:598#3879<\/a>"],[0,1,"<a href=\"CheckData.php.html#602\">CheckData::anonymousFunction:602#3921<\/a>"],[0,2,"<a href=\"CheckData.php.html#629\">CheckData::checkInvoiceBalances<\/a>"],[0,1,"<a href=\"CheckData.php.html#632\">CheckData::anonymousFunction:632#4099<\/a>"],[0,4,"<a href=\"CheckData.php.html#650\">CheckData::checkClientBalances<\/a>"],[0,4,"<a href=\"CheckData.php.html#847\">CheckData::checkLogoFiles<\/a>"],[0,1,"<a href=\"CheckData.php.html#874\">CheckData::getArguments<\/a>"],[0,1,"<a href=\"CheckData.php.html#882\">CheckData::getOptions<\/a>"],[0,1,"<a href=\"CreateLuisData.php.html#30\">CreateLuisData::__construct<\/a>"],[0,2,"<a href=\"CreateLuisData.php.html#40\">CreateLuisData::handle<\/a>"],[0,1,"<a href=\"CreateLuisData.php.html#67\">CreateLuisData::createIntents<\/a>"],[0,3,"<a href=\"CreateLuisData.php.html#78\">CreateLuisData::getCreateEntityIntents<\/a>"],[0,4,"<a href=\"CreateLuisData.php.html#104\">CreateLuisData::getFindEntityIntents<\/a>"],[0,2,"<a href=\"CreateLuisData.php.html#125\">CreateLuisData::getListEntityIntents<\/a>"],[0,2,"<a href=\"CreateLuisData.php.html#167\">CreateLuisData::getNavigateToIntents<\/a>"],[0,3,"<a href=\"CreateLuisData.php.html#185\">CreateLuisData::createIntent<\/a>"],[0,1,"<a href=\"CreateLuisData.php.html#211\">CreateLuisData::getArguments<\/a>"],[0,1,"<a href=\"CreateLuisData.php.html#219\">CreateLuisData::getOptions<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#61\">CreateTestData::__construct<\/a>"],[0,4,"<a href=\"CreateTestData.php.html#90\">CreateTestData::handle<\/a>"],[0,2,"<a href=\"CreateTestData.php.html#126\">CreateTestData::createClients<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#155\">CreateTestData::createTicketTemplates<\/a>"],[0,3,"<a href=\"CreateTestData.php.html#186\">CreateTestData::createTickets<\/a>"],[0,3,"<a href=\"CreateTestData.php.html#234\">CreateTestData::createInvoices<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#264\">CreateTestData::createPayment<\/a>"],[0,2,"<a href=\"CreateTestData.php.html#278\">CreateTestData::createTasks<\/a>"],[0,2,"<a href=\"CreateTestData.php.html#303\">CreateTestData::createVendors<\/a>"],[0,2,"<a href=\"CreateTestData.php.html#331\">CreateTestData::createExpense<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#346\">CreateTestData::createOtherObjects<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#358\">CreateTestData::createTaxRate<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#369\">CreateTestData::createCategory<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#379\">CreateTestData::createProject<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#393\">CreateTestData::getArguments<\/a>"],[0,1,"<a href=\"CreateTestData.php.html#401\">CreateTestData::getOptions<\/a>"],[0,1,"<a href=\"InitLookup.php.html#41\">InitLookup::__construct<\/a>"],[0,10,"<a href=\"InitLookup.php.html#51\">InitLookup::handle<\/a>"],[0,2,"<a href=\"InitLookup.php.html#82\">InitLookup::anonymousFunction:82#458<\/a>"],[0,3,"<a href=\"InitLookup.php.html#93\">InitLookup::popuplateSubdomains<\/a>"],[0,55,"<a href=\"InitLookup.php.html#117\">InitLookup::initCompanies<\/a>"],[0,2,"<a href=\"InitLookup.php.html#269\">InitLookup::parseCompany<\/a>"],[0,7,"<a href=\"InitLookup.php.html#285\">InitLookup::parseAccount<\/a>"],[0,1,"<a href=\"InitLookup.php.html#342\">InitLookup::logMessage<\/a>"],[0,1,"<a href=\"InitLookup.php.html#349\">InitLookup::logError<\/a>"],[0,1,"<a href=\"InitLookup.php.html#355\">InitLookup::truncateTables<\/a>"],[0,1,"<a href=\"InitLookup.php.html#369\">InitLookup::getOptions<\/a>"],[0,1,"<a href=\"MakeClass.php.html#34\">MakeClass::getArguments<\/a>"],[0,1,"<a href=\"MakeClass.php.html#49\">MakeClass::getOptions<\/a>"],[0,1,"<a href=\"MakeClass.php.html#57\">MakeClass::getTemplateContents<\/a>"],[0,1,"<a href=\"MakeClass.php.html#74\">MakeClass::getDestinationFilePath<\/a>"],[0,2,"<a href=\"MakeClass.php.html#85\">MakeClass::getFileName<\/a>"],[0,3,"<a href=\"MakeClass.php.html#94\">MakeClass::getColumns<\/a>"],[0,4,"<a href=\"MakeClass.php.html#116\">MakeClass::getFormFields<\/a>"],[0,3,"<a href=\"MakeClass.php.html#140\">MakeClass::getDatabaseFields<\/a>"],[0,3,"<a href=\"MakeClass.php.html#157\">MakeClass::getTransformerFields<\/a>"],[0,1,"<a href=\"MakeModule.php.html#30\">MakeModule::__construct<\/a>"],[0,7,"<a href=\"MakeModule.php.html#40\">MakeModule::handle<\/a>"],[0,1,"<a href=\"MakeModule.php.html#50\">MakeModule::anonymousFunction:50#182<\/a>"],[0,1,"<a href=\"MakeModule.php.html#136\">MakeModule::getArguments<\/a>"],[0,1,"<a href=\"MakeModule.php.html#144\">MakeModule::getOptions<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#38\">MakeModuleSettings::__construct<\/a>"],[0,2,"<a href=\"MakeModuleSettings.php.html#43\">MakeModuleSettings::getTemplateContents<\/a>"],[0,2,"<a href=\"MakeModuleSettings.php.html#55\">MakeModuleSettings::handle<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#77\">MakeModuleSettings::getModuleRoutesFilePath<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#84\">MakeModuleSettings::getDestinationFilePath<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#92\">MakeModuleSettings::getArguments<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#99\">MakeModuleSettings::getOptions<\/a>"],[0,1,"<a href=\"MakeModuleSettings.php.html#109\">MakeModuleSettings::getFileName<\/a>"],[0,1,"<a href=\"MobileLocalization.php.html#33\">MobileLocalization::__construct<\/a>"],[0,2,"<a href=\"MobileLocalization.php.html#43\">MobileLocalization::handle<\/a>"],[0,3,"<a href=\"MobileLocalization.php.html#57\">MobileLocalization::laravelResources<\/a>"],[0,4,"<a href=\"MobileLocalization.php.html#69\">MobileLocalization::flutterResources<\/a>"],[0,1,"<a href=\"MobileLocalization.php.html#90\">MobileLocalization::getResources<\/a>"],[0,1,"<a href=\"MobileLocalization.php.html#105\">MobileLocalization::getOptions<\/a>"],[0,4,"<a href=\"PruneData.php.html#24\">PruneData::handle<\/a>"],[0,1,"<a href=\"PruneData.php.html#70\">PruneData::getArguments<\/a>"],[0,1,"<a href=\"PruneData.php.html#78\">PruneData::getOptions<\/a>"],[0,3,"<a href=\"RemoveOrphanedDocuments.php.html#24\">RemoveOrphanedDocuments::handle<\/a>"],[0,1,"<a href=\"RemoveOrphanedDocuments.php.html#47\">RemoveOrphanedDocuments::getArguments<\/a>"],[0,1,"<a href=\"RemoveOrphanedDocuments.php.html#55\">RemoveOrphanedDocuments::getOptions<\/a>"],[0,3,"<a href=\"ResetData.php.html#24\">ResetData::handle<\/a>"],[0,1,"<a href=\"ResetData.php.html#44\">ResetData::getOptions<\/a>"],[0,1,"<a href=\"SendOverdueTickets.php.html#26\">SendOverdueTickets::__construct<\/a>"],[0,2,"<a href=\"SendOverdueTickets.php.html#33\">SendOverdueTickets::handle<\/a>"],[0,2,"<a href=\"SendOverdueTickets.php.html#45\">SendOverdueTickets::sendReminders<\/a>"],[0,1,"<a href=\"SendOverdueTickets.php.html#52\">SendOverdueTickets::anonymousFunction:52#258<\/a>"],[0,1,"<a href=\"SendOverdueTickets.php.html#65\">SendOverdueTickets::getArguments<\/a>"],[0,1,"<a href=\"SendOverdueTickets.php.html#73\">SendOverdueTickets::getOptions<\/a>"],[0,1,"<a href=\"SendRecurringInvoices.php.html#43\">SendRecurringInvoices::__construct<\/a>"],[0,2,"<a href=\"SendRecurringInvoices.php.html#51\">SendRecurringInvoices::handle<\/a>"],[0,2,"<a href=\"SendRecurringInvoices.php.html#66\">SendRecurringInvoices::resetCounters<\/a>"],[0,8,"<a href=\"SendRecurringInvoices.php.html#77\">SendRecurringInvoices::createInvoices<\/a>"],[0,3,"<a href=\"SendRecurringInvoices.php.html#117\">SendRecurringInvoices::createExpenses<\/a>"],[0,1,"<a href=\"SendRecurringInvoices.php.html#142\">SendRecurringInvoices::getArguments<\/a>"],[0,1,"<a href=\"SendRecurringInvoices.php.html#150\">SendRecurringInvoices::getOptions<\/a>"],[0,1,"<a href=\"SendReminders.php.html#63\">SendReminders::__construct<\/a>"],[0,3,"<a href=\"SendReminders.php.html#73\">SendReminders::handle<\/a>"],[0,1,"<a href=\"SendReminders.php.html#90\">SendReminders::anonymousFunction:90#432<\/a>"],[0,5,"<a href=\"SendReminders.php.html#98\">SendReminders::billInvoices<\/a>"],[0,6,"<a href=\"SendReminders.php.html#125\">SendReminders::chargeLateFees<\/a>"],[0,10,"<a href=\"SendReminders.php.html#158\">SendReminders::sendReminderEmails<\/a>"],[0,5,"<a href=\"SendReminders.php.html#208\">SendReminders::sendScheduledReports<\/a>"],[0,8,"<a href=\"SendReminders.php.html#252\">SendReminders::loadExchangeRates<\/a>"],[0,1,"<a href=\"SendReminders.php.html#295\">SendReminders::getArguments<\/a>"],[0,1,"<a href=\"SendReminders.php.html#303\">SendReminders::getOptions<\/a>"],[0,1,"<a href=\"SendRenewalInvoices.php.html#43\">SendRenewalInvoices::__construct<\/a>"],[0,10,"<a href=\"SendRenewalInvoices.php.html#51\">SendRenewalInvoices::handle<\/a>"],[0,1,"<a href=\"SendRenewalInvoices.php.html#103\">SendRenewalInvoices::anonymousFunction:103#637<\/a>"],[0,1,"<a href=\"SendRenewalInvoices.php.html#114\">SendRenewalInvoices::getArguments<\/a>"],[0,1,"<a href=\"SendRenewalInvoices.php.html#122\">SendRenewalInvoices::getOptions<\/a>"],[0,1,"<a href=\"TestOFX.php.html#33\">TestOFX::__construct<\/a>"],[0,1,"<a href=\"TestOFX.php.html#40\">TestOFX::handle<\/a>"],[0,21,"<a href=\"UpdateKey.php.html#30\">UpdateKey::handle<\/a>"],[0,1,"<a href=\"UpdateKey.php.html#132\">UpdateKey::getArguments<\/a>"],[0,1,"<a href=\"UpdateKey.php.html#140\">UpdateKey::getOptions<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

@@ -13,7 +13,7 @@ services:
 
 addons:
   hosts:
-    - www.ninja.test
+    - web
 
 cache:
   directories:

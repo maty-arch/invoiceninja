@@ -8,7 +8,7 @@ class_name: AcceptanceTester
 modules:
     enabled:
         - WebDriver:
-            url: 'http://www.ninja.test:8000'
+            url: 'web'
             window_size: 1024x768
             wait: 5
             restart: true
@@ -18,7 +18,7 @@ modules:
                 webStorageEnabled: true
         - Db:
             dsn: 'mysql:dbname=ninja;host=127.0.0.1;'
-            user: 'ninja'
-            password: 'ninja'
+            user: 'phpmyadmin'
+            password: 'root'
             dump: tests/_data/dump.sql
         - \Helper\Acceptance
